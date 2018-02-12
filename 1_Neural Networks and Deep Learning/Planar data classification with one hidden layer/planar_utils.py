@@ -64,3 +64,10 @@ def load_extra_datasets():
     no_structure = np.random.rand(N, 2), np.random.rand(N, 2)
     
     return noisy_circles, noisy_moons, blobs, gaussian_quantiles, no_structure
+
+def display_info(thevar, name, displayvalue=False):
+    print ("*** [%s] infos as below ***" % name)
+    print ("shape:%s" % str(thevar.shape))
+    if (displayvalue):
+        print ("value:%s" % str(thevar))
+    print ("*** [%s] infos at end ***" % name)
